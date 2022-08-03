@@ -14,18 +14,36 @@
 .card-section {
   margin: auto;
   margin-top: 12vh;
-  width: 25rem;
-  border: 1px solid black;
+  width: 23rem;
+  background-color: #e8f9fd;
+  border-radius: 8px;
+  padding: 1rem 0 1rem 0;
 }
 
 .card-heading {
-  border: 1px solid red;
+  font-size: 2rem;
+  text-align: center;
+  color: #ff0063;
+  text-decoration: underline;
 }
 
 .card-input {
   display: flex;
 }
 
+.card-input input {
+  margin-left: 0.5rem;
+}
+
 .card-content {
-  border: 1px solid green;
+  border: 1px solid black;
+}
+
+.row {
+  border: 1px solid salmon;
+  background: salmon;
+  margin: 0;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  border-radius: 8px;
 }

@@ -17,8 +17,32 @@ function App() {
             <button className="btn btn-primary mx-2 w-25">Add</button>
           </div>
           <div className="card-content">
-            <div className="row">
+            <div className="row my-3 mx-2">
               <div className="col-8">Buy Mango</div>
+              <div className="col-4">
+                <div className="btn btn-danger mx-3">Delete</div>
+              </div>
+            </div>
+            <div className="row my-3 mx-2">
+              <div className="col-8">Buy Banana</div>
+              <div className="col-4">
+                <div className="btn btn-danger mx-3">Delete</div>
+              </div>
+            </div>
+            <div className="row my-3 mx-2">
+              <div className="col-8">Buy Apple</div>
+              <div className="col-4">
+                <div className="btn btn-danger mx-3">Delete</div>
+              </div>
+            </div>
+            <div className="row my-3 mx-2">
+              <div className="col-8">Buy Fruits</div>
+              <div className="col-4">
+                <div className="btn btn-danger mx-3">Delete</div>
+              </div>
+            </div>
+            <div className="row my-3 mx-2">
+              <div className="col-8">Buy Shakes</div>
               <div className="col-4">
                 <div className="btn btn-danger mx-3">Delete</div>
               </div>
