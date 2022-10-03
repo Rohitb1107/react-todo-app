@@ -59,7 +59,7 @@ const Todo = () => {
             <div className="single-item" key={i}>
               <div className="text-part">{e}</div>
               <div className="icons">
-                <FaPencilAlt className="delete-icon" />
+                {/* <FaPencilAlt className="delete-icon" /> */}
                 <RiDeleteBin6Line
                   className="delete-icon"
                   onClick={() => deleteItem(i)}
