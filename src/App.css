@@ -11,6 +11,13 @@
   height: 15rem;
 }
 
+.name {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  padding-top: 2rem;
+}
+
 .main-div {
   border: 1px solid white;
   border-radius: 5px;
@@ -42,21 +49,31 @@
 }
 
 .display-items {
-  border: 1px solid black;
+  border: 1px solid #ced4da;
   border-radius: 3px;
   background-color: white;
   width: 25%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .single-item {
-  border: 1px solid black;
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  width: 100%;
   font-size: 1.2rem;
-  margin: 1rem auto;
+  margin-bottom: 1rem;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  color: #ff33ae;
+}
+
+.single-item:hover {
+  background-color: aliceblue;
 }
 
 .delete-icon {
@@ -64,11 +81,36 @@
   color: #ff33ae;
 }
 
-.icons{
+.delete-icon:hover {
+  color: green;
+}
+
+.icons {
   display: flex;
   gap: 2rem;
 }
 
-/* .text-part{
-  margin-left: 1rem;
-} */
+@media screen and (min-width: 480px) and (max-width: 1380px) {
+  .main-div {
+    width: 40%;
+  }
+
+  .display-items {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-div {
+    width: 80%;
+  }
+
+  .display-items {
+    width: 80%;
+  }
+
+  .name {
+   font-size: 2.5rem;
+   padding-top: 3rem;
+  }
+}

@@ -11,15 +11,29 @@ const Todo = () => {
   };
 
   const addItem = () => {
-    setItems([inputValue, ...items]);
-    setInputValue("");
+    if (!inputValue) {
+      alert("Input is blank!");
+    } else {
+      setItems([inputValue, ...items]);
+      setInputValue("");
+    }
+  };
+
+  const deleteItem = (i) => {
+    const updatedList = items.filter((elem, ind) => {
+      return ind !== i;
+    });
+
+    setItems(updatedList);
   };
 
   console.log(items);
 
   return (
     <>
-      <div className="back-div"></div>
+      <div className="back-div">
+        <div className="name">Todo App | Rohit</div>
+      </div>
       <div className="main-div">
         <div className="title-part">
           <div className="title">New Todo:</div>
@@ -40,13 +54,20 @@ const Todo = () => {
         </div>
       </div>
       <div className="display-items">
-        <div className="single-item">
-          <div className="text-part">Buy milk</div>
-          <div className="icons">
-            <FaPencilAlt className="delete-icon" />
-            <RiDeleteBin6Line className="delete-icon" />
-          </div>
-        </div>
+        {items.map((e, i) => {
+          return (
+            <div className="single-item" key={i}>
+              <div className="text-part">{e}</div>
+              <div className="icons">
+                <FaPencilAlt className="delete-icon" />
+                <RiDeleteBin6Line
+                  className="delete-icon"
+                  onClick={() => deleteItem(i)}
+                />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </>
   );
