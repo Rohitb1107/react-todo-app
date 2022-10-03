@@ -40,3 +40,35 @@
   color: white;
   padding: 0 2rem 0 2rem;
 }
+
+.display-items {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: white;
+  width: 25%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.single-item {
+  border: 1px solid black;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  font-size: 1.5rem;
+  color: #ff33ae;
+}
+
+.icons{
+  display: flex;
+  gap: 2rem;
+}
+
+/* .text-part{
+  margin-left: 1rem;
+} */
